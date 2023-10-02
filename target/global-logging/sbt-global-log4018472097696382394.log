@@ -1,0 +1,15 @@
+[debug] > Exec(compile, None, None)
+[debug] Evaluating tasks: Compile / compile
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 13 Scala sources to C:\Users\User\IdeaProjects\AddressApp\target\scala-2.12\classes ...
+[info] Non-compiled module 'compiler-bridge_2.12' for Scala 2.12.17. Compiling...
+[info]   Compilation completed in 8.34s.
+[warn] C:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\model\Character.scala:27:15: match may not be exhaustive.
+[warn] It would fail on the following input: Card((x: String forSome x not in ("10", "2", "3", "4", "5", "6", "7", "8", "9", "ace", "jack", "king", "queen")), _)
+[warn]     cards.map {
+[warn]               ^
+[warn] one deprecation (since 8.0.60-R10); re-run with -deprecation for details
+[warn] two warnings found
+[info] done compiling
+[success] Total time: 14 s, completed Aug 4, 2023 12:53:51 PM
+[debug] > Exec(idea-shell, None, None)

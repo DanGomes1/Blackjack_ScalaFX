@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="500.0" prefWidth="650.0" styleClass="game-table-background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.GameOverviewController">
+    <children>
+      <HBox alignment="CENTER" layoutX="170.0" layoutY="250.0" prefHeight="100.0" prefWidth="415.0" spacing="10.0" AnchorPane.bottomAnchor="156.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="65.0">
+         <children>
+              <ImageView fx:id="playerCard1" fitHeight="135.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@images/empty.jpg" />
+                  </image>
+              </ImageView>
+              <ImageView fx:id="playerCard2" fitHeight="135.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@images/empty.jpg" />
+                  </image>
+              </ImageView>
+              <ImageView fx:id="playerCard3" fitHeight="135.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@images/empty.jpg" />
+                  </image>
+              </ImageView>
+              <ImageView fx:id="playerCard4" fitHeight="135.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@images/empty.jpg" />
+                  </image>
+              </ImageView>
+              <ImageView fx:id="playerCard5" fitHeight="135.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@images/empty.jpg" />
+                  </image>
+              </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="170.0" layoutY="64.0" prefHeight="100.0" prefWidth="407.0" spacing="10.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="64.0">
+         <children>
+              <ImageView fx:id="dealerCard1" fitHeight="135.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@images/empty.jpg" />
+                  </image>
+              </ImageView>
+              <ImageView fx:id="dealerCard2" fitHeight="135.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@images/empty.jpg" />
+                  </image>
+              </ImageView>
+              <ImageView fx:id="dealerCard3" fitHeight="135.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@images/empty.jpg" />
+                  </image>
+              </ImageView>
+              <ImageView fx:id="dealerCard4" fitHeight="135.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@images/empty.jpg" />
+                  </image>
+              </ImageView>
+              <ImageView fx:id="dealerCard5" fitHeight="135.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@images/empty.jpg" />
+                  </image>
+              </ImageView>
+         </children>
+      </HBox>
+        <MenuBar prefHeight="37.0" prefWidth="155.0">
+            <menus>
+                <Menu text="_Game">
+                    <items>
+                        <MenuItem onAction="#handleRestart" text="_Restart" />
+                  <MenuItem onAction="#changePlayerName" text="Change _Name" />
+                        <Menu text="_Change Difficulty">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#handleEasyMode" text="Easy" />
+                                <MenuItem mnemonicParsing="false" onAction="#handleHardMode" text="Hard" />
+                            </items>
+                        </Menu>
+                        <MenuItem onAction="#handleExit" text="_Exit" />
+                    </items>
+                </Menu>
+                <Menu text="_Help">
+                    <items>
+                        <MenuItem onAction="#handleShowAbout" text="_About" />
+                        <MenuItem onAction="#handleShowInstructions" text="_Instructions" />
+                    </items>
+               <accelerator>
+                  <KeyCodeCombination alt="ANY" code="H" control="UP" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button layoutX="11.0" layoutY="261.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleHit" prefHeight="37.0" prefWidth="75.0" text="Hit" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" />
+        <Button layoutX="500.0" layoutY="253.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleStand" prefHeight="37.0" prefWidth="86.0" text="Stand" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+        <Label layoutX="50.0" layoutY="49.0" prefHeight="51.0" prefWidth="142.0" styleClass="label-bright" stylesheets="@DarkTheme.css" text="Dealer's Cards:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="50.0" />
+        <Label fx:id="playerNameLabel" layoutX="54.0" layoutY="256.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="51.0" prefWidth="142.0" styleClass="label-bright" stylesheets="@DarkTheme.css" text="Player's Cards:" AnchorPane.bottomAnchor="193.0" AnchorPane.leftAnchor="25.0" />
+        <Label fx:id="playerScoreLabel" layoutX="269.0" layoutY="403.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="21.0" prefWidth="193.0" styleClass="label-bright" text="Label" AnchorPane.bottomAnchor="76.0" />
+      <Label fx:id="gameModeLabel" layoutX="269.0" layoutY="440.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="21.0" prefWidth="193.0" styleClass="label-bright" text="Label" AnchorPane.bottomAnchor="39.0" />
+      <Label fx:id="playerCardValueLabel" layoutX="269.0" layoutY="365.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="21.0" prefWidth="193.0" styleClass="label-bright" text="Label" AnchorPane.bottomAnchor="114.0" />
+      <Label fx:id="dealerCardValueLabel" layoutX="269.0" layoutY="27.0" prefHeight="21.0" prefWidth="275.0" styleClass="label-bright" text="Label" AnchorPane.topAnchor="27.0" />
+    </children>
+</AnchorPane>

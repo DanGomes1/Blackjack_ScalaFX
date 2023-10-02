@@ -1,0 +1,129 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(ea4dd984-efb4-4aec-95ef-4945402032a1), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 13 Scala sources to C:\Users\User\IdeaProjects\AddressApp\target\scala-2.12\classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.12' for Scala 2.12.17. Compiling...[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 6.97s.[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:10:8: not found: object javafx[0m
+[0m[[0m[31merror[0m] [0m[0mimport javafx.{scene => jfxs}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:27:20: Symbol 'type javafx.fxml.FXMLLoader' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'class scalafxml.core.FXMLLoader'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type FXMLLoader is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'FXMLLoader.class' was compiled against an incompatible version of javafx.fxml.[0m
+[0m[[0m[31merror[0m] [0m[0m  val loader = new FXMLLoader(rootResource, NoDependencyResolver)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:29:10: value load is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m  loader.load();[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:31:22: value getRoot is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m  val roots = loader.getRoot[jfxs.layout.BorderPane][0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:31:30: not found: value jfxs[0m
+[0m[[0m[31merror[0m] [0m[0m  val roots = loader.getRoot[jfxs.layout.BorderPane][0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:29:3: Symbol 'type javafx.event.EventTarget' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'class scalafx.stage.Window'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type EventTarget is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'Window.class' was compiled against an incompatible version of javafx.event.[0m
+[0m[[0m[31merror[0m] [0m[0m  loader.load();[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:35:5: Symbol 'type javafx.collections.ObservableList' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'method scalafx.stage.Stage.icons'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type ObservableList is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'Stage.class' was compiled against an incompatible version of javafx.collections.[0m
+[0m[[0m[31merror[0m] [0m[0m    icons += new Image("file:src/main/resources/ch/makery/address/view/images/jack-of-spades.png")[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:37:7: Symbol 'type javafx.collections.ObservableList' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'method scalafx.scene.Scene.stylesheets'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type ObservableList is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'Scene.class' was compiled against an incompatible version of javafx.collections.[0m
+[0m[[0m[31merror[0m] [0m[0m      stylesheets += getClass.getResource("view/DarkTheme.css").toString[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:45:12: value load is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m    loader.load();[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:46:24: value getRoot is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m    val roots = loader.getRoot[jfxs.layout.AnchorPane][0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:46:32: not found: value jfxs[0m
+[0m[[0m[31merror[0m] [0m[0m    val roots = loader.getRoot[jfxs.layout.AnchorPane][0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:55:12: value load is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m    loader.load();[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:56:24: value getRoot is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m    val roots = loader.getRoot[jfxs.layout.AnchorPane][0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:56:32: not found: value jfxs[0m
+[0m[[0m[31merror[0m] [0m[0m    val roots = loader.getRoot[jfxs.layout.AnchorPane][0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:64:12: value load is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m    loader.load(resource);[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:65:25: value getRoot is not a member of scalafxml.core.FXMLLoader[0m
+[0m[[0m[31merror[0m] [0m[0m    val roots2 = loader.getRoot[jfxs.Parent][0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:65:33: not found: value jfxs[0m
+[0m[[0m[31merror[0m] [0m[0m    val roots2 = loader.getRoot[jfxs.Parent][0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\view\PlayerEditNameDialogController.scala:12:2: exception during macro expansion: [0m
+[0m[[0m[31merror[0m] [0m[0mscala.ScalaReflectionException: object javafx.scene.control.TextField in compiler mirror not found.[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Mirrors$RootsBase.staticClass(Mirrors.scala:141)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Mirrors$RootsBase.staticClass(Mirrors.scala:29)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.determineInputType$1(sfxmlMacro.scala:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.$anonfun$impl$8(sfxmlMacro.scala:165)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.impl(sfxmlMacro.scala:163)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Method.invoke(Method.java:578)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.macros.runtime.JavaReflectionRuntimes$JavaReflectionResolvers.$anonfun$resolveJavaReflectionRuntime$6(JavaReflectionRuntimes.scala:51)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.typechecker.Macros.macroExpandWithRuntime(Macros.scala:849)[0m
+[0m[[0m[31merror[0m] [0m[0m@sfxml[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:66:71: type Controller is not a member of ch.makery.address.view.PlayerEditNameDialogController[0m
+[0m[[0m[31merror[0m] [0m[0m    val control = loader.getController[PlayerEditNameDialogController#Controller][0m
+[0m[[0m[31merror[0m] [0m[0m                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\MainApp.scala:68:22: Symbol 'type javafx.stage.StageStyle' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'value scalafx.stage.Stage.style'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type StageStyle is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'Stage.class' was compiled against an incompatible version of javafx.stage.[0m
+[0m[[0m[31merror[0m] [0m[0m    val dialog = new Stage() {[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\view\GameOverviewController.scala:19:2: exception during macro expansion: [0m
+[0m[[0m[31merror[0m] [0m[0mscala.ScalaReflectionException: object javafx.scene.control.Label in compiler mirror not found.[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Mirrors$RootsBase.staticClass(Mirrors.scala:141)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Mirrors$RootsBase.staticClass(Mirrors.scala:29)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.determineInputType$1(sfxmlMacro.scala:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.$anonfun$impl$8(sfxmlMacro.scala:165)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.impl(sfxmlMacro.scala:163)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Method.invoke(Method.java:578)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.macros.runtime.JavaReflectionRuntimes$JavaReflectionResolvers.$anonfun$resolveJavaReflectionRuntime$6(JavaReflectionRuntimes.scala:51)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.typechecker.Macros.macroExpandWithRuntime(Macros.scala:849)[0m
+[0m[[0m[31merror[0m] [0m[0m@sfxml[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\IdeaProjects\AddressApp\src\main\scala\ch\makery\address\view\WelcomeController.scala:8:2: exception during macro expansion: [0m
+[0m[[0m[31merror[0m] [0m[0mscala.ScalaReflectionException: object javafx.event.ActionEvent in compiler mirror not found.[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Mirrors$RootsBase.staticClass(Mirrors.scala:141)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Mirrors$RootsBase.staticClass(Mirrors.scala:29)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.determineInputType$1(sfxmlMacro.scala:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.toJavaFXTypeOrOriginal$1(sfxmlMacro.scala:144)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.$anonfun$impl$11(sfxmlMacro.scala:181)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.$anonfun$impl$10(sfxmlMacro.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:293)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.$anonfun$impl$9(sfxmlMacro.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:297)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scalafxml.core.macros.sfxmlMacro$.impl(sfxmlMacro.scala:178)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.reflect.Method.invoke(Method.java:578)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.macros.runtime.JavaReflectionRuntimes$JavaReflectionResolvers.$anonfun$resolveJavaReflectionRuntime$6(JavaReflectionRuntimes.scala:51)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.typechecker.Macros.macroExpandWithRuntime(Macros.scala:849)[0m
+[0m[[0m[31merror[0m] [0m[0m@sfxml[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m22 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 9 s, completed 6 Aug 2023, 1:03:55 am[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
